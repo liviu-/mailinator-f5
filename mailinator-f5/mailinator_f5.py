@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #encoding: utf-8
 
 import time
@@ -7,13 +7,13 @@ import requests
 
 from IPython import embed as qq
 
-CHECKING_FREQ = 30
-
 try:
     from apikey import API
 except ImportError:
     API = input('Please provide your API key ')
 
+
+CHECKING_FREQ = 30
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Mailinator inbox checker")
@@ -36,7 +36,7 @@ def wait_email(inbox):
     while 1:
         emails = check_inbox(inbox)
         if is_new(emails):
-            print('new email')
+            print('New email on {}'.format(time.ctime()))
         time.sleep(CHECKING_FREQ)
 
 
