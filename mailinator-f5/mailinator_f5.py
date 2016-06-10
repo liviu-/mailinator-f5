@@ -5,8 +5,6 @@ import time
 import argparse
 import requests
 
-from IPython import embed as qq
-
 try:
     from apikey import API
 except ImportError:
