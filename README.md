@@ -1,5 +1,10 @@
 mailinator-f5
 =============
 
-(not ready)
-Daemon to check mailinator inbox for new emails. Needs mailinator sign up for API key
+- Poll Mailinator inbox for new e-mails.
+- It requires Mailinator API key.
+- No installation
+
+## Usage
+    $ ./mailinator_f5.py <inbox>
+
