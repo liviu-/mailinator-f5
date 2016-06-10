@@ -47,13 +47,8 @@ def get_inbox(inbox):
                             api=API)).json()
 
 
-def start_daemon():
-    ...
-
-
 def main():
     args = parse_arguments()
-    start_daemon()
     wait_email(args.inbox[0])
 
 if __name__ == '__main__':
